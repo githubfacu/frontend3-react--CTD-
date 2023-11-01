@@ -1,9 +1,12 @@
 import React from 'react'
 import '../styles/Card.css'
 
-const Card = () => {
+const Card = ({nombre, oceano}) => {
   return (
-    <div className='card'>Hola, soy una tarjeta</div>
+    <div className='card'>
+      <h3>{nombre}!</h3>
+      <h4>Ingresaste el océano {oceano}</h4>
+    </div>
   )
 }
 
